@@ -1,4 +1,4 @@
-package Dhakshayani;
+package dhakshayani.trainee;
 
 public class Permutation {
     public static void main(String[] args)
