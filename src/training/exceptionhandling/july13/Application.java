@@ -1,4 +1,4 @@
-package training.july13.exceptionhandling;
+package training.exceptionhandling.july13;
 
 public class Application {
 

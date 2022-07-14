@@ -1,6 +1,9 @@
-package training.july13.exceptionhandling;
+package training.exceptionhandling.july13;
+
+import training.exceptionhandling.july14.RegistrationException;
 
 import java.util.Calendar;
+import java.util.Locale;
 import java.util.Random;
 
 //test class
@@ -10,6 +13,7 @@ public class Main {
         registerKavya();
         registerMike();
         registerTaylor();
+
     }
 
     private static void registerKavya() {
@@ -33,8 +37,10 @@ public class Main {
         StudentRegistration studentRegistration  = new StudentRegistration();
         try {
             studentRegistration.registerForACourse(application);
-        } catch (Exception e) {
-            System.out.println("Student " + student.getName() + " registration is failed : "+ e.getMessage());
+        } catch (RegistrationException re) {
+            System.out.println("Student " + student.getName() + " registration is failed : "+ re);
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -60,8 +66,10 @@ public class Main {
         StudentRegistration studentRegistration  = new StudentRegistration();
         try {
             studentRegistration.registerForACourse(application);
-        } catch (Exception e) {
-            System.out.println("Student " + student.getName() + " registration is failed : "+ e.getMessage());
+        } catch (RegistrationException re) {
+            System.out.println("Student " + student.getName() + " registration is failed : "+ re);
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
@@ -87,8 +95,10 @@ public class Main {
         StudentRegistration studentRegistration  = new StudentRegistration();
         try {
             studentRegistration.registerForACourse(application);
-        } catch (Exception e) {
-            System.out.println("Student " + student.getName() + " registration is failed : "+ e.getMessage());
+        } catch (RegistrationException re) {
+            System.out.println("Student " + student.getName() + " registration is failed : "+ re);
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 }
