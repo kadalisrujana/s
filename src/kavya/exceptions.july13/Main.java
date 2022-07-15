@@ -54,6 +54,7 @@ public class Main {
 
                 }
             }catch(NullPointerException npe){
+                //incase of exception due to city is null then provide default hra = 10%
                 emp.hra = emp.salary*10/100;
             }
             System.out.println(emp);
